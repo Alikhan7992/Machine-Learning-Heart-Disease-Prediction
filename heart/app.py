@@ -7,7 +7,7 @@ model = joblib.load("knn_heart.pkl")
 scaler = joblib.load("scaler.pkl")
 expected_columns = joblib.load("columns.pkl")
 
-st.title("Heart Stroke Prediction by akarsh")
+st.title("Heart Stroke Prediction by Mohammad Ali")
 st.markdown("Provide the following details to check your heart stroke risk:")
 
 
@@ -62,4 +62,5 @@ if st.button("Predict"):
     if prediction == 1:
         st.error("⚠️ High Risk of Heart Disease")
     else:
+
         st.success("✅ Low Risk of Heart Disease")
